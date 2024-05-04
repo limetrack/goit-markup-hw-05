@@ -140,7 +140,7 @@ header li {
   border-radius: 2px; */
 }
 
-.contacts {
+.address {
   display: flex;
 }
 
@@ -433,4 +433,128 @@ footer a {
 .modal-btn:hover {
   border: 1px solid var(--pressed-state);
   fill: var(--pressed-state);
+}
+
+.form {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.form-label {
+  color: var(--subtle-text);
+  padding-bottom: 4px;
+}
+
+.label {
+  position: relative;
+}
+
+.input {
+  width: 360px;
+  height: 40px;
+  border: 1px solid var(--subtle-text);
+  border-radius: 4px;
+}
+
+.input:hover,
+.input:active,
+.input:focus {
+  border: 1px solid var(--pressed-state);
+}
+
+.label:hover .icon,
+.label:active .icon,
+.label:focus .icon {
+  color: var(--pressed-state);
+}
+
+label>.icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: var(--dark);
+}
+
+label>input {
+  padding-left: 40px;
+  height: 40px;
+}
+
+.input.comment {
+  height: 120px;
+  padding: 8px;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  stroke-width: 0;
+  stroke: currentColor;
+}
+
+.privacy {
+  color: var(--subtle-text);
+  font-size: 12px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox a {
+  color: var(--pressed-state);
+  text-decoration: underline;
+}
+
+.form button {
+  width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  background-color: var(--primary-brand);
+  border: none;
+  color: var(--white);
+  margin: 24px auto;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-top: 10px;
+  gap: 24px;
+}
+
+.subscribe-form input {
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid var(--light);
+  border-radius: 4px;
+  padding: 8px 16px;
+  color: var(--light);
+}
+
+.subscribe-form input::placeholder {
+  color: var(--light);
+}
+
+.subscribe-form button {
+  width: 165px;
+  height: 40px;
+  background-color: var(--pressed-state);
+  color: var(--light);
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
