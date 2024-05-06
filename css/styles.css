@@ -432,7 +432,8 @@ footer a {
 
 .modal-btn:hover {
   border: 1px solid var(--pressed-state);
-  fill: var(--pressed-state);
+  color: var(--light);
+  background-color: var(--pressed-state);
 }
 
 .form {
@@ -509,11 +510,38 @@ label>input {
   display: flex;
   align-items: center;
   gap: 8px;
+  fill: var(--white);
+  color: var(--subtle-text);
+  position: relative;
+  cursor: pointer;
 }
 
 .checkbox a {
   color: var(--pressed-state);
   text-decoration: underline;
+}
+
+.checkbox label>input {
+  height: 13px;
+  margin-left: 12px;
+  opacity: 0;
+}
+
+.checkbox .icon {
+  color: var(--subtle-text)
+}
+
+.checkbox label>.icon {
+  left: 0;
+}
+
+.checkbox .icon.checked {
+  display: none;
+  z-index: 10;
+}
+
+.checkbox input:checked+svg.checked {
+  display: block;
 }
 
 .form button {
